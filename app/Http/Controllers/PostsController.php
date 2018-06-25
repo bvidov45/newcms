@@ -129,7 +129,7 @@ class PostsController extends Controller
         }
 
         
-        $posts->title = $request->title;
+        $posts->title = $request->input('title');
         $posts->content = $request->input('content');
         $posts->category_id = $request->input('category_id');
         
